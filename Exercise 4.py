@@ -1,7 +1,7 @@
 import math
 import random
 """""
-"""""
+
 # Assignment 4.1
 
 n = 1
@@ -41,7 +41,7 @@ while True:
         continue
 print(f"Largest number is {largest}")
 print(f"Smallest number is {smallest}")
-
+"""""
 # Assignment 4.4
 
 guess = int(input("Guess a number between 1 to 10: "))
@@ -55,7 +55,8 @@ while finished_rounds >= 0:
     elif guess > secret:
         print("Too high")
         guess = int(input("Guess again: "))
-    elif guess == secret:
+    #elif guess == secret:
+    else:
         print("You guessed the number!")
         break
 finished_rounds = finished_rounds + 1

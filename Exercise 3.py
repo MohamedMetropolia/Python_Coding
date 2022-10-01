@@ -4,23 +4,23 @@
 
 length = float(input("What is the length of your zander in centimeters: "))
 zander = 42
-if length <= 42:
+if length < 42:
     print("Your zander is not big enough, please release it back into the lake.")
     print(f"Your zander is {zander - length:.0f} centimeters short of the size limit.")
 else:
     print("Congrats, your zander meets the size limit!")
-"""""
+
 # Assignment 3.2
 
 print("Please choose between the following cabin classes:")
 cabinclass = input("LUX, A, B or C class: ")
-if (cabinclass == "LUX") or (cabinclass == "lux"):
+if cabinclass == "LUX".lower():
     print("upper-deck cabin with a balcony.")
-elif (cabinclass == "A") or (cabinclass == "a"):
+elif cabinclass == "A".lower():
     print("above the car deck, equipped with a window.")
-elif (cabinclass == "B") or (cabinclass == "b"):
+elif cabinclass == "B".lower():
     print("windowless cabin above the car deck.")
-elif (cabinclass == "C") or (cabinclass == "c"):
+elif cabinclass == "C".upper():
     print("windowless cabin below the car deck.")
 else:
     print("invalid cabin class")
@@ -57,4 +57,4 @@ elif (year % 4 == 0) and (year % 100 != 0):
 
 else:
     print("is not a leap year".format(year))
-"""""
+

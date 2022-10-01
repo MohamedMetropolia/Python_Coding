@@ -1,14 +1,16 @@
 import random
+import math
+"""""
+print("I am a Princess")
+print("You are a Princess")
+print("This text was written by a Princess")
 
-# print("I am a Princess")
-# print("You are a Princess")
-# print("This text was written by a Princess")
+print(2+3)
+print(6+7*2)
 
-# print(2+3)
-# print(6+7*2)
-
-# sur_name = input("What is your surname? ")
-# print("Hello " + sur_name)
+sur_name = input("What is your surname? ")
+print("Hello " + sur_name)
+"""""
 """""
 first_name = "Mohamed "
 sur_name = "el Allati"
@@ -143,7 +145,7 @@ else:
 
 print(f"The factorial of {number} is {fact}")
 """""
-
+"""""
 sum = 0
 numberOfDice = int(input("Input the number of dice: "))
 for dice in range(1, numberOfDice+1):
@@ -152,6 +154,103 @@ for dice in range(1, numberOfDice+1):
     sum = sum + dice
 
 print(f"The total sum is {sum}")
+"""""
+"""""
+names = ["Simeoni", "Juhani", "Eero", "Lauri", "Aapo", "Tuomas", "Timo"]
+print("\n".join(sorted(names)))
+"""""
+""""" data = ["Row, row, row your boat,", "Gently down the stream.", "Merrily, merrily, merrily, merrily,", 
+"Life is but a dream."] for x in data: print(x) "" """
+"""""
+print("Minutes in a year: ")
+print(365*24*60)
+"""""
+"""""
+print('print("Hello there!")')
+"""""
+"""
+database = []
+def add_movie(database: list, name: str, director: str, year: int, runtime: int):
+    movie = {"name": name,
+             "director": director,
+             "year": year,
+             "runtime": runtime}
+    database.append(movie)
 
 
+add_movie(database, "Movie 1", "Author", 2022, 92)
+add_movie(database, "Movie 2", "Author2", 2022, 93)
+add_movie(database, "Movie 3", "Shrek2", 2022, 222)
+add_movie(database, "Movie 4", "Shrek3", 2022, 555)
+add_movie(database, "Lord of the Rings: Return of the king", "Shrek3", 2022, 555)
+print('\n'.join(map(str, database)))
 
+movie_list = []
+def search_movie(database: list, search_word: str):
+    while True:
+        for movie in database:
+            if search_word.lower() in movie["name"].lower():
+                movie_list.append(movie)
+
+        return movie_list
+movies = search_movie(database, "Lord of the rings")
+print(movies)
+"""""
+"""
+number1 = int(input("Please enter a number: "))
+number2 = int(input("Please enter another number: "))
+operation = input("Do you want to add, subtract or multiply the two numbers: ")
+
+if operation == "add":
+    print(f"{number1} + {number2} = {number1 + number2}")
+"""""
+"""""
+t = int(input("How many times a week do you eat at the student cafeteria? "))
+p = float(input("The price of a typical student lunch? "))
+m = float(input("How much money do you spend on groceries in a week? "))
+
+weekly = t * p + m
+daily = weekly / 7
+
+print("Average food expenditure: ")
+print(f"Daily: {daily} ")
+print(f"Weekly: {weekly}")
+"""""
+"""""
+num = int(input("Please type in a number: "))
+
+if num < 0:
+    calc = num*(-1)
+    print("Hello")
+    print(f"The absolute value of this number is {calc}")
+print(f"The absolute value of this number is {num}")
+"""""
+"""""
+add = 0
+def cal(number):
+    for x in number:
+        print(x)
+        global add
+        add += x
+        print(add)
+    return print(x)
+
+list = [1,2,3]
+cal(list)
+"""""
+"""""
+days = "mon", "tue", "wed", "thu", "fri", "sat", "sun"
+print(days[::5])
+"""""
+"""""
+def greet(name):
+    print(f"Hello there {name}")
+
+def greet_many(name, times):
+    i = 1
+    while i <= times:
+        greet(name)
+        i += 1
+
+greet_many("Emily", 5)
+"""""

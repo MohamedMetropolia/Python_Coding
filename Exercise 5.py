@@ -23,14 +23,15 @@ print(f"The total for {dice} rolls is {result}.")
 
 print("Press 'Enter' to print the results")
 
-number = int(input("Enter a number: "))
+number = input("Enter a number: ")
 input_List = []
 
-while number != "":
-    number = int(number)
-    input_List.append(number)
-    number = input("Enter a number: ")
-    input_List.sort(reverse=True)
+for x in number:
+    while number != "":
+        number = int(number)
+        input_List.append(number)
+        number = input("Enter a number: ")
+        input_List.sort(reverse=True)
 
 print(input_List[:5])
 
@@ -67,3 +68,4 @@ for x in city_list:
     print(x)
 
 # print('\n'.join(map(str, city_list)))
+
