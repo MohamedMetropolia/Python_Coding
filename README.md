@@ -2,6 +2,7 @@
 
 These are the exercise questions of my Python course. I will be slowly updating this page as I progress through my studies and learn new things.
 
+[
 
 [2. Variables and interactive programs](https://github.com/MohamedMetropolia/Python_Coding/edit/main/README.md#2-variables-and-interactive-programs)
 
@@ -18,6 +19,8 @@ These are the exercise questions of my Python course. I will be slowly updating 
 [8. Using relational databases](https://github.com/MohamedMetropolia/Python_Coding/edit/main/README.md#8-using-relational-databases)
 
 [9. Fun_Game Project](https://github.com/MohamedMetropolia/Python_Coding/edit/main/README.md#9-fun_game-project)
+
+]
 
 ## 2. Variables and interactive programs
 
