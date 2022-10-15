@@ -6,19 +6,19 @@ These are the exercise questions of my Python course. I will be slowly updating 
 
 [2. Variables and interactive programs](https://github.com/MohamedMetropolia/Python_Coding#2-variables-and-interactive-programs)
 
-[3. Conditional structures (if)](https://github.com/MohamedMetropolia/Python_Coding/edit/main/#3-conditional-structures-if)
+[3. Conditional structures (if)](https://github.com/MohamedMetropolia/Python_Coding#3-conditional-structures-if)
 
-[4. While loops (while)](https://github.com/MohamedMetropolia/Python_Coding/edit/main/#4-while-loops-while)
+[4. While loops (while)](https://github.com/MohamedMetropolia/Python_Coding#4-while-loops-while)
 
-[5. List structures and iterative loops (for)](https://github.com/MohamedMetropolia/Python_Coding/edit/main/#5-list-structures-and-iterative-loops-for)
+[5. List structures and iterative loops (for)](https://github.com/MohamedMetropolia/Python_Coding#5-list-structures-and-iterative-loops-for)
 
-[6. Functions](https://github.com/MohamedMetropolia/Python_Coding/edit/main/#6-functions)
+[6. Functions](https://github.com/MohamedMetropolia/Python_Coding#6-functions)
 
-[7. Tuple, set, and dictionary](https://github.com/MohamedMetropolia/Python_Coding/edit/main/#7-tuple-set-and-dictionary)
+[7. Tuple, set, and dictionary](https://github.com/MohamedMetropolia/Python_Coding#7-tuple-set-and-dictionary)
 
-[8. Using relational databases](https://github.com/MohamedMetropolia/Python_Coding/edit/main/#8-using-relational-databases)
+[8. Using relational databases](https://github.com/MohamedMetropolia/Python_Coding#8-using-relational-databases)
 
-[9. Fun_Game Project](https://github.com/MohamedMetropolia/Python_Coding/edit/main/#9-fun_game-project)
+[9. Fun_Game Project](https://github.com/MohamedMetropolia/Python_Coding#9-fun_game-project)
 
 ]
 
