@@ -1,6 +1,23 @@
 # Exercises
 
-These are the exercise questions of my Python course. I will be slowly updating this page as I progress through my studies and learn new things. 
+These are the exercise questions of my Python course. I will be slowly updating this page as I progress through my studies and learn new things.
+
+
+[2. Variables and interactive programs](https://github.com/MohamedMetropolia/Python_Coding/edit/main/README.md#2-variables-and-interactive-programs)
+
+[3. Conditional structures (if)](https://github.com/MohamedMetropolia/Python_Coding/edit/main/README.md#3-conditional-structures-if)
+
+[4. While loops (while)](https://github.com/MohamedMetropolia/Python_Coding/edit/main/README.md#4-while-loops-while)
+
+[5. List structures and iterative loops (for)](https://github.com/MohamedMetropolia/Python_Coding/edit/main/README.md#5-list-structures-and-iterative-loops-for)
+
+[6. Functions](https://github.com/MohamedMetropolia/Python_Coding/edit/main/README.md#6-functions)
+
+[7. Tuple, set, and dictionary](https://github.com/MohamedMetropolia/Python_Coding/edit/main/README.md#7-tuple-set-and-dictionary)
+
+[8. Using relational databases](https://github.com/MohamedMetropolia/Python_Coding/edit/main/README.md#8-using-relational-databases)
+
+[9. Fun_Game Project](https://github.com/MohamedMetropolia/Python_Coding/edit/main/README.md#9-fun_game-project)
 
 ## 2. Variables and interactive programs
 
@@ -182,92 +199,4 @@ airports in kilometers. The calculation is based on the airport coordinates fetc
 the `geopy` library:  https://geopy.readthedocs.io/en/stable/. Install the library by selecting **View / Tool Windows / Python Packages**
 in your PyCharm IDE, write `geopy` into the search field and finish the installation.
 
-## 9. Fundamentals of object-oriented programming
-
-1. Write a `Car` class that has the following properties: registration number, maximum speed, current speed and travelled distance. 
-Add a class initializer that sets the first two of the properties based on parameter values. The current speed and travelled distance
-of a new car must be automatically set to zero. Write a main program where you create a new car (registration number ABC-123, maximum speed 
-142 km/h). Finally, print out all the properties of the new car.
-
-2. Extend the program by adding an `accerelate` method into the new class. The method should receive the change of speed (km/h) as a parameter. 
-If the change is negative, the car reduces speed. The method must change the value of the `speed` property of the object. The speed of the car 
-must stay below the set maximum and cannot be less than zero. Extend the main program so that the speed of the car is first increased by +30 km/h,
-then +70 km/h and finally +50 km/h. Then print out the current speed of the car. Finally, use the emergency brake by forcing a -200 km/h change on 
-the speed and then print out the final speed. The travelled distance does not have to be updated yet.
-
-3. Again, extend the program by adding a new `drive` method that receives the number of hours as a parameter. The method increases the travelled
-distance by how much the car has travelled in constant speed in the given time. Example: The travelled distance of `car` object is 2000 km. The 
-current speed is 60 km/h. Method call `car.drive(1.5)` increases the travelled distance to 2090 km.
-
-4. Now we will program a car race. The travelled distance of a new car is initialized as zero. At the beginning of the main program, create a list 
-that consists of 10 car objects created using a loop. The maximum speed of each new car is a random value between 100 km/h and 200 km/h. 
-The registration numbers are created as follows: "ABC-1", "ABC-2" and so on. Now the race begins. One per every hour of the race, the following 
-operations are performed:
-   - The speed of each car is changed so that the change in speed is a random value between -10 km/h and +15 km/h. This is done using the `accerelate` method.
-   - Each car is made to drive for one hour. This is done with the `drive` method.
-
-The race continues until one of the cars has advanced at least 10,000 kilometers. Finally, the properties of each car are printed out formatted into a clear table.
-
-## 10. Association
-
-1. Write an `Elevator` class that receives the numbers of the bottom and top floors as initializer parameters. The elevator has methods `go_to_floor`,
-`floor_up` and `floor_down`. A new elevator is always at the bottom floor. If you make elevator `h` for example the method call `h.go_to_floor(5)`, the
-method calls either the `floor_up` or `floor_down` methods as many times as it needs to get to the fifth floor. The methods run the elevator
-one floor up or down and tell what floor the elevator is after each move. Test the class by creating an elevator in the main program, tell it to move
-to a floor of your choice and then back to the bottom floor.
-
-2. Extend the previous program by creating a `Building` class. The initializer parameters for the class are the numbers of the bottom and top floors and
-the number of elevators in the building. When a building is created, the building creates the required number of elevators. The list of elevators is 
-stored as a property of the building. Write a method called `run_elevator` that accepts the number of the elevator and the destination floor as its
-parameters. In the main program, write the statements for creating a new building and running the elevators of the building.
-
-3. Extend the program again by adding a method `fire_alarm` that does not receive any parameters and moves all elevators to the bottom floor. Continue 
-the main program by causing a fire alarm in your building.
-
-4. This exercise continues the previous car race exercise from the last exercise set. Write a `Race` class that has the following properties:
-name, distance in kilometers and a list of cars participating in the race. The class has an initializer that receives the name, kilometers, and car list 
-as parameters and sets their values to the corresponding properties in the class. The class has the following methods:
-   - `hour_passes`, which performs the operations done once per hour in the original exercise: generates a random change of speed for each car and calls 
-   their `drive` method.
-   - `print_status`, which prints out the current information of each car as a clear, formatted table.
-   - `race_finished`, which returns `True` if any of the cars has reached the finish line, meaning that they have driven the entire distance of the race.
-
-   Write a main program that creates an 8000-kilometer race called `Grand Demolition Derby`. The new race is given a list of ten cars similarly to the
-   earlier exercise. The main program simulates the progressing of the race by calling the `hour_passes` in a loop, after which it uses the `race_finished`
-   method to check if the race has finished. The current status is printed out using the `print_status` method every ten hours and then once more at the
-   end of the race.
-
-## 11. Inheritance
-
-1. Implement the following class hierarchy using Python: A publication can be either a book or a magazine. Each publication has a name. Each book 
-also has an author and a page count, whereas each magazine has a chief editor. Also write the required initializers to both classes. Create a 
-`print_information` method to both subclasses for printing out all information of the publication in question. In the main program, create 
-publications Donald Duck (chief editor Aki Hyyppä) and Compartment No. 6 (author Rosa Liksom, 192 pages). Print out all information of both
-publications using the methods you implemented. 
-
-2. Extend the previosly written `Car` class by adding two subclasses: `ElectricCar` and `GasolineCar`. Electric cars have the capacity of the 
-battery in kilowatt-hours as their property. Gasoline cars have the volume of the tank in liters as their property. Write initializers for the
-subclasses. For example, the initializer of electric cars receives the registration number, maximum speed and battery capacity as its parameter.
-It calls the initializer of the base class to set the first two properties and then sets its capacity. Write a main program where you create
-one electric car (ABC-15, 180 km/h, 52.5 kWh) and one gasoline car (ACD-123, 165 km/h, 32.3 l). Select speeds for both cars, make them drive for
-three hours and print out the values of their kilometer counters.
-
-## 12. Using external interfaces
-
-1. Write a program that fetches and prints out a random Chuck Norris joke for the user. Use the API presented here: https://api.chucknorris.io/. 
-The user should only be shown the joke text.
-
-2. Familiarize yourself with the OpenWeather weather API at: https://openweathermap.org/api. Your task is to write a program that asks the user 
-for the name of a municipality and then prints out the corresponding weather condition description text and temperature in Celsius degrees. Take a good 
-look at the API documentation. You must register for the service to receive the API key required for making API requests. Furthermore, find out 
-how you can convert Kelvin degrees into Celsius.
-
-## 13. Setting up a backend service with an interface
-
-1. Implement a Flask backend service that tells whether a number received as a parameter is a prime number or not. Use the prior prime number 
-exercise as a starting point. For example, a GET request for number 31 is given as: `http://127.0.0.1:5000/prime_number/31`. The response must 
-be in the format of `{"Number":31, "isPrime":true}`.
-
-2. Implement a backend service that gets the ICAO code of an airport and then returns the name and location of the airport in JSON format.
-The information is fetched from the airport database used on this course. For example, the GET request for EFHK would be: 
-`http://127.0.0.1:5000/airport/EFHK`. The response must be in the format of: `{"ICAO":"EFHK", "Name":"Helsinki-Vantaa Airport", "Location":"Helsinki"}`.
+## 9. Fun_Game Project
