@@ -13,7 +13,7 @@ except requests.exceptions.RequestException as e:
     print(f"No response, reason: HTTP meow error.")
 
 # Assignment 12.2
-API_KEY = '3fa7a94d9c023b6d58a1201d406ac75a'
+API_KEY = 'API-KEY'
 city = input("Enter a city name: ")
 request = f"https://api.openweathermap.org/data/2.5/weather?q={city}&APPID={API_KEY}"
 
