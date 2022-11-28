@@ -1,5 +1,9 @@
 #Assignment 2.1
 
+import os
+
+# Clearing the Screen
+
 name = input("What is your name ")
 print("Hello, " + name + "!")
 
@@ -42,3 +46,4 @@ import random
 
 print(f"Random number is {random.randint(0, 999):03d}")
 print(f"Random number is {random.randint(1, 6)}{random.randint(1, 6)}{random.randint(1, 6)}{random.randint(1, 6)}")
+os.system('cls')
